@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="fa-IR">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!--link css-->
+    <link rel="stylesheet" href="style.css">
+    <title>sorastyle-خرید</title>
+  </head>
+  <body>
+    <div class="container">
+    <!-----------------------------------------------------------------------------------
+    -------------------------------------------------------------------------------------
+    ------------------------------------  start header   -------------------------------
+    ------------------------------------------------------------------------------------
+    ------------------------------------------------------------------------------------>
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <a class="navbar-brand" href="#">سُرا استایل</a>
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active dropdown">
+            <div class="dropdown"><a class="nav-link" href="index.html">صفحه اصلی  </a>
+              <div class="dropdown-content">
+                <a href="newest.html">جدید ترین ها</a>
+                <a href="bestsellers.html">پر فروش ها </a>
+                <a href="discounts.html">تخفیف ها </a>
+              </div>
+            </div>
+           </li>
+            <li class="nav-item ">
+              <div class="dropdown"><a class="nav-link" href="famale.html">زنانه</a>
+                <div class="dropdown-content">
+                  <a href="dress.html">پیراهن</a>
+                  <a href="Plaidshirt.html">شومیز</a>
+                  <a href="manteau.html">مانتو</a>
+                </div>
+              </div>
+            </li>
+           <li class="nav-item">
+            <div class="dropdown"><a class="nav-link" href="male.html">مردانه</a>
+              <div class="dropdown-content">
+                <a href="trousers.html">شلوار</a>
+                <a href="shirt.html">پیراهن</a>
+                <a href="coat.html">کت</a>
+              </div>
+           </li>
+          <li class="nav-item">
+            <a class="nav-link " href="childish.html">بچگانه</a>
+          </li>
+        </ul>
+    <!----------------------------------------------------------------------------------
+    ------------------------------------------------------------------------------------
+    --------------------------------   start search header  ----------------------------
+    ------------------------------------------------------------------------------------
+    ------------------------------------------------------------------------------------>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="دنبال چی هستی ؟" aria-label="Search">
+          <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">جستوجو</button>
+        </form>
+      </div>
+    </nav>
+  </header>
+  <br>
+  <br>
+  <br>
+  <main>
+     <!----------------------------------------------------------------------------------
+     ------------------------------------------------------------------------------------
+     ------------------------------------ start content ---------------------------------
+     ------------------------------------------------------------------------------------
+     ------------------------------------------------------------------------------------>
+     <div class="container">
+            <div class="col-md-8 order-md-1" style="margin: auto;">
+                <h4 class="mb-3">خرید کالا</h4>
+                <form class="needs-validation" novalidate="">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="firstName">نام</label>
+                            <input type="text" class="form-control" id="firstName" placeholder="نام" value="" required="">
+                            <div class="invalid-feedback"> نام خود را وارد کنید. </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="lastName">نام خانوادگی</label>
+                            <input type="text" class="form-control" id="lastName" placeholder="نام خانوادگی" value="" required="">
+                            <div class="invalid-feedback"> نام خانوادگی خود را وارد کنید. </div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="username">نام کاربری</label>
+                        <div class="input-group">
+                          <input type="text" class="form-control" id="username" placeholder="نام کاربری" required="" style="padding: 22px;">
+                          <div class="invalid-feedback" style="width: 100%;"> نام کاربری خود را وارد کنید </div>
+
+                            <div class="input-group-prepend" style="padding: 5px; ">
+                                <span class="input-group-text">@</span>
+                            </div>
+                          
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email">ایمیل <span class="text-muted"></span></label>
+                        <input type="email" class="form-control" id="email" placeholder="you@gmail.com">
+                        <div class="invalid-feedback"> لطفا ایمیل خود را وارد کنید </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="address">آدرس</label>
+                        <input type="text" class="form-control" id="address" placeholder="استان، شهر/شهرستان/ خیابان ..." required="">
+                        <div class="invalid-feedback"> لطفا آدرس خود را وارد کنید. </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5 mb-3">
+                            <label for="country">کشور</label>
+                            <select class="custom-select d-block w-100" id="country" required="">
+                                <option value="">انتخاب کنید</option>
+                                <option>ایران</option>
+                                <option>عراق</option>
+                                <option>ترکیه</option>
+                            </select>
+                            <div class="invalid-feedback"> لطفا کشور خود را انتخاب کنید</div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="state">شهر</label>
+                            <select class="custom-select d-block w-100" id="city" required="">
+                                <option value="">انتخاب کنید</option>
+                                <option>تهران</option>
+                                <option>شیراز</option>
+                                <option>مشهد</option>
+                                <option>تبریز</option>
+                                <option>استانبول</option>
+                                <option>نجف</option>
+                            </select>
+                            <div class="invalid-feedback">لطفا شهر خود را انتخاب کنید </div>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label for="zip">کد تخفیف</label>
+                            <input type="text" class="form-control" id="zip" placeholder="***" required="">
+                            <div class="invalid-feedback"> کد تخفیف خود را وارد کنید </div>
+                        </div>
+                    </div>
+                    <hr class="mb-4">
+                    <div class="col-md-3 mb-3">
+                      <label for="money">مبلغ را وارد کنید</label>
+                      <input type="text" class="form-control" id="zip" placeholder="" required="">
+                      <div class="invalid-feedback"> مبلغ مورد نظر را وارد کنید</div>
+                      </div>
+                    <hr class="mb-4">
+                    <h4 class="mb-3">پرداخت</h4>
+                    <div class="d-block my-3">
+                        <div class="custom-control custom">
+                            <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked="" required="">
+                            <label class="custom-control-label" for="credit">کارت اعتباری</label>
+                        </div>
+                        <div class="custom-control custom">
+                            <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required="">
+                            <label class="custom-control-label" for="debit">Blue Bank</label>
+                        </div>
+                        <div class="custom-control custom">
+                            <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required="">
+                            <label class="custom-control-label" for="paypal">کارت هدیه</label>
+                            
+                        </div>
+                    </div>
+                    <div class="row" style="margin: auto;">
+                        <div class="col-md mb-3">
+                            <label for="cc-number">شماره کارت</label>
+                            <input type="text" class="form-control" id="cc-number" placeholder="" required="">
+                            <div class="invalid-feedback"> شماره کارت را وارد کنید </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 mb-3">
+                            <label for="cc-expiration">تاریخ انقضا</label> 
+                            <input type="text" class="form-control" id="cc-expiration" placeholder=" .../..." required="" style="text-align: center;">
+                            <div class="invalid-feedback"> تاریخ انفضای کارت را وارد کنید </div>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label for="cc-cvv">CVV</label>
+                            <input type="text" class="form-control" id="cc-cvv" placeholder="" required="">
+                            <div class="invalid-feedback"> cvv خود را وارد کنید </div>
+                        </div>
+                        <div class="col-md-3 mb-3" >
+                          <label for="cc-poya">رمز پویا</label>
+                          <input type="text" class="form-control" id="cc-pasactive" placeholder="کد را وارد کنید" required="">
+                          <div class="invalid-feedback"> رمز پویا را وارد کنید</div>
+                      </div>
+                    </div>
+                    <hr class="mb-4">
+                    <button class="btn btn-success btn-lg btn-block" type="submit">پرداخت </button>
+                </form>
+            </div>
+        </div>
+        <br>
+    <br>
+    <br>
+  </main>
+  <!---------------------------------------------------------------------------
+    ----------------------------------------------------------------------------
+    -----------------------  start icone footer   ------------------------------
+    -----------------------------------------------------------------------------
+    ---------------------------------------------------------------------------->
+  <footer>
+    <br>
+    <br>
+    <div class="footer_content">
+      <div class="footer_item footer_element">
+        <div class="logo"><img src="images/logo.png" alt="نماد اعتماد الکترونیک" ></div> 
+      </div>
+      <div class="footer_item footer_element">
+        <p>برند سُرا در سال ۱۴۰۰ با تمرکز بر سبک پوشش ساده و استفاده از الیاف طبیعی آغاز به کار کرد.
+          تا به امروز کاربردی بودن محصولات، حفظ کیفیت و رضایت مشتری همواره در اولویت اصول طراحی و کاری سُرا قرار دارد.
+
+         <br> فروشگاه و دفتر مرکزی سُرا استایل: کریمخان، خیابان ایرانشهر، کوچه بهروزیان، پلاک ۴۰، زنگ ۱
+         
+         تلفن دفتر مرکزی: ۹۱۰۰۴۸۶</p>
+      </div>
+      <div class="footer_item footer_element">
+       <ul>
+         <li> <a href="Register.html" style="color: black;">حساب کاربری</a></li>
+         <li> <a href="questions.html" style="color: black;">سوال های متداول</a></li>
+         <li><a href="Sizeguide.html"style="color: #000;">راهنمای سایز</a></li>
+         <li><a href="send.html" style="color: black;">نحوه ارسال کالا</a></li>
+       </ul>
+      </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <div style="clear: both;"></div>
+    <!---------------------------------------------------------------------------
+    ----------------------------------------------------------------------------
+    -----------------------  start icone footer   ------------------------------
+    -----------------------------------------------------------------------------
+    ---------------------------------------------------------------------------->
+    <br>
+      <div claas="content_footer" style="background-color:#e7e6e6;">
+        <br>
+          <ul class="share-buttons" data-source="simplesharingbuttons.com">
+              <li><a href="https://twitter.com/intent/tweet?source=&text=:%20" target="_blank" title="Tweet" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(document.title) + ':%20'  + encodeURIComponent(document.URL)); return false;"><img alt="Tweet" src="images/flat_web_icon_set/inverted/Twitter.png" /></a></li>
+              <li><a href="http://pinterest.com/pin/create/button/zeinabizadi1999" target="_blank" title="Pin it" onclick="window.open('http://pinterest.com/pin/create/button/?url=' + encodeURIComponent(document.URL) + '&description=' +  encodeURIComponent(document.title)); return false;"><img alt="Pin it" src="images/flat_web_icon_set/inverted/Pinterest.png" /></a></li>
+              <li><a href="mailto:?subject=&body=zeinab.izadi1999@gmail.com" target="_blank" title="Send email" onclick="window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&body=' +  encodeURIComponent(document.URL)); return false;"><img alt="Send email" src="images/flat_web_icon_set/inverted/Email.png" /></a></li>
+          </ul>
+           <br>
+           <div claas="text"><p>کلیه حقوق این سایت متعلق به فروشگاه سُرا استایل میباشد.</p></div>
+       </div>
+
+   </footer>
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+</div>
+</body>
+</html>

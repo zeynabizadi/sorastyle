@@ -1,0 +1,233 @@
+/*  #############################################################################################
+    ################################## START BASE STYLE #########################################
+    #############################################################################################   */
+
+html {
+    height: 100%;
+}
+
+body {
+    
+    position: relative;
+    min-height: 100%;
+    background-color: #edf0f7;
+    font-family: 'CustomFont', Arial, sans-serif;
+    font-weight:normal;
+}
+
+html *, body * {
+    margin: 0px;
+    padding: 0px;
+    direction: rtl; 
+}
+
+
+main{
+  text-align: center;
+  padding: 0;
+}
+div.img{
+  filter: drop-shadow(8px 8px 10px gray);
+
+}
+div.container{
+  background-color: #ffffff;
+  margin: auto;
+}
+
+
+/*   #############################################################################################
+    ################################## START NAVBAR STYLE ########################################
+    ##############################################################################################    */
+.navbar a {
+  
+  display: block;
+  text-decoration: none;
+}
+
+.navbar .icon {
+  display: none;
+}
+
+.dropdown .nav-link {
+  border: none;
+  outline:none;
+  margin: 0;
+}
+
+
+div.dropdown-content{
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  z-index: 1;
+}
+ 
+.dropdown-content a {
+  float: none;
+  text-decoration: none;
+  display: block;
+  text-align: right;
+}
+
+
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the navbar (.icon) */
+@media screen and (max-width: 600px) {
+  .navbar a:not(:first-child), .dropdown .nav-link {
+    display: none;
+  }
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the navbar look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .navbar.responsive {position: relative;}
+  .navbar.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+  .navbar.responsive .dropdown {float: none;}
+  .navbar.responsive .dropdown-content {position: relative;}
+  .navbar.responsive .dropdown .nav-link {
+    display: block;
+    text-align: center;
+  }
+}
+
+/*  #############################################################################################
+    ################################## START DROPDOWN STYLE ######################################
+    ##############################################################################################    */
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  text-align: right;
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+/*  #############################################################################################
+    ################################## START FORM STYLE #########################################
+    #############################################################################################    */
+
+
+.form-group{
+  
+  margin: auto;
+  
+}
+
+
+/*  #############################################################################################
+    ################################## START LEAD STYLE #########################################
+    #############################################################################################   */
+
+
+.lead{
+  font-size: 20px;
+  color: rgb(83, 83, 83);
+}
+
+/*  #############################################################################################
+    ################################## START FOOTER STYLE #######################################
+    #############################################################################################    */
+
+div.footer_item {
+  width: 33.3%;
+  text-align: center;
+}
+
+div.footer_element {
+  float: left;
+}
+
+div.footer_item ul li {
+  list-style: none;
+}
+
+footer{
+background-color:#f2f2f2;
+  text-align:center;
+  
+}
+
+div.content_footer{
+    background-color:gray;
+    
+}
+ul.share-buttons{
+    list-style: none;
+    padding: 0;
+  }
+  
+  ul.share-buttons li{
+    display: inline;
+  }
+  
+  ul.share-buttons .sr-only{
+    position: absolute;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0;
+    border: 0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+  }
+
+  /* #############################################################################################
+    ################################## START FONT STYLE ##########################################
+    ##############################################################################################  */
+
+  @font-face {
+    font-family: myFont;
+    src: url(fonts/font.woff) format('woff');
+  }
+  @font-face {
+    font-family: Vazir;
+    font-style: normal;
+    font-weight: normal;
+    src: url('fonts/Vazir.eot');
+    src: url('fonts/Vazir.eot?#iefix') format('embedded-opentype'), 
+    url('fonts/Vazir.woff2') format('woff2'), 
+    url('fonts/Vazir.woff') format('woff'), 
+    url('fonts/Vazir.ttf') format('truetype');
+   }
+   @font-face {
+    font-family: Vazir;
+    font-style: normal;
+    font-weight: bold;
+    src: url('fonts/Vazir-Bold.eot');
+    src: url('fonts/Vazir-Bold.eot?#iefix') format('embedded-opentype'), 
+    url('fonts/Vazir-Bold.woff2') format('woff2'), 
+    url('fonts/Vazir-Bold.woff') format('woff'), 
+    url('fonts/Vazir-Bold.ttf') format('truetype');
+   }
