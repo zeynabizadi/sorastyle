@@ -1,2 +1,2 @@
-# sorastyle
--  [سورا سایت](https://zeynabizadi.github.io/sorastyle/)
+# project
+-  [sorastyle](https://zeynabizadi.github.io/sorastyle/)
